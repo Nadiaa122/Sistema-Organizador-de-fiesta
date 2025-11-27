@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Fiesta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="hero small">
+    <h1 class="titulo-hero">Crear Nueva Fiesta</h1>
+</header>
+
+<nav class="navbar">
+    <a href="index.html">Inicio</a>
+    <a href="crear_fiesta.html" class="activo">Crear Fiesta</a>
+</nav>
+
+<main class="container">
+
+    <section class="card fade-in">
+        <h2>Formulario de creación</h2>
+
+        <form id="formFiesta">
+            <label>Nombre del evento:</label>
+            <input type="text" id="nombre" required>
+
+            <label>Fecha:</label>
+            <input type="date" id="fecha" required>
+
+            <label>Ubicación:</label>
+            <input type="text" id="ubicacion" required>
+
+            <label>Descripción:</label>
+            <textarea id="descripcion"></textarea>
+
+            <button type="submit" class="btn">Crear fiesta</button>
+        </form>
+    </section>
+
+    <section class="card fade-in">
+        <h2>Listado de fiestas</h2>
+        <ul id="listaFiestas"></ul>
+    </section>
+
+</main>
+
+<script src="app.js"></script>
+
+</body>
+</html>
